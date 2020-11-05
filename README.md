@@ -3,7 +3,7 @@
 ## Setting up
 
 After you clone / download this repository, open this folder with a command prompt / terminal and run `npm install`.<br />
-This will install all the dependencies needed to run this demonstration.
+This will install all the dependencies needed to run this app.
 
 This app uses the spoonacular api, so please get an API key here: https://spoonacular.com/food-api
 
@@ -12,6 +12,8 @@ After you have cloned the repository, create a file called `.env` add this line 
 ```
 REACT_APP_SPOONACULAR_APIKEY=abcd1234
 ```
+
+This .env file is ignored by git, so your API key won't be exposed to other collaborators.
 
 **Please do not expose your API key publicly. Treat it like a password.**<br />
 
