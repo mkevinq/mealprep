@@ -12,7 +12,7 @@ function App() {
         { /* About page */}
         <Route path="/about">
           <p>
-            hi there
+            This is the about page
           </p>
           <Link to="/">Home</Link>
         </Route>
@@ -20,7 +20,7 @@ function App() {
         { /* Landing page */}
         <Route path="/">
           <p>
-            hi
+            This is your API key: {process.env.REACT_APP_SPOONACULAR_APIKEY}
           </p>
           <Link to="/about">About</Link>
         </Route>

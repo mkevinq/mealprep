@@ -1,4 +1,31 @@
-# Getting Started with Create React App
+# mealprep.
+
+## Setting up
+
+After you clone / download this repository, open this folder with a command prompt / terminal and run `npm install`.<br />
+This will install all the dependencies needed to run this demonstration.
+
+This app uses the spoonacular api, so please get an API key here: https://spoonacular.com/food-api
+
+After you have cloned the repository, create a file called `.env` add this line to it using your API key:
+
+```
+REACT_APP_SPOONACULAR_APIKEY=abcd1234
+```
+
+**Please do not expose your API key publicly. Treat it like a password.**<br />
+
+When you run `npm start`, you should see a page open up in your browser that shows your API key.
+
+## Deployment
+
+This app is not meant to be deployed, since your API key will be exposed.
+
+A separate back-end server that handles sending requests to the API would be needed.
+
+(Kind of like a middle man between this front-end app and the API.)
+
+***
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
