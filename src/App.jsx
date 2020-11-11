@@ -22,7 +22,7 @@ function App() {
           <p>
             This is your API key: {process.env.REACT_APP_SPOONACULAR_APIKEY}
           </p>
-          <Link to="/about">About</Link>
+          <Link to="/search">Plan</Link>
         </Route>
       </Switch>
     </Router>
