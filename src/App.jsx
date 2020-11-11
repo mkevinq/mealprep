@@ -9,10 +9,10 @@ function App() {
   return (
     <Router>
       <Switch>
-        { /* About page */}
-        <Route path="/about">
+        { /* Search page */}
+        <Route path="/search">
           <p>
-            This is the about page
+            This is the search page
           </p>
           <Link to="/">Home</Link>
         </Route>
