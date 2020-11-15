@@ -44,12 +44,40 @@ p {
   line-height: 160%;
 }
 
+/*Variations on the p syle with different font weights*/
 #hard {
   font-weight: 700;
 }
 
 #soft {
   font-weight: 400;
+}
+
+button {
+  border-radius: 100px;
+  margin: 0;
+  font-family: 'Red Hat Display', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 20px;
+}
+
+/*Variations on the button style*/
+#green {
+  border: none;
+  background-color: #74D142;
+  color: #FFFFFF;
+}
+
+/*Positioning for images in the two "highlight" boxes*/
+#left {
+  float: left;
+}
+
+#right {
+  float: right;
 }
 
 body {

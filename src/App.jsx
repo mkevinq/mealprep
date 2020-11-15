@@ -4,6 +4,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import placeholder from "./assets/placeholder_phone.png";
 
 function App() {
   return (
@@ -26,7 +27,7 @@ function App() {
 
           <div>
             <h1>This is a test header</h1>
-            <Highlight></Highlight>
+            <Highlight />
           </div>
 
         </Route>
@@ -37,7 +38,8 @@ function App() {
 
 function Highlight() {
   return (
-    <div>
+    <div class="highlight">
+      <img id="right" src={placeholder} alt="Phone" width="214" height="430"/>
       <p id="hard">
         1,000,000+ RECIPES
       </p>
@@ -47,7 +49,7 @@ function Highlight() {
       <p id="soft">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreLorem ipsum dolor sit amet, consectetur.
       </p>
-      <button>
+      <button id="green">
         Plan
       </button>
     </div>
