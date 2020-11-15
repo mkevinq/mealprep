@@ -26,11 +26,31 @@ function App() {
 
           <div>
             <h1>This is a test header</h1>
+            <Highlight></Highlight>
           </div>
 
         </Route>
       </Switch>
     </Router>
+  );
+}
+
+function Highlight() {
+  return (
+    <div>
+      <p id="hard">
+        1,000,000+ RECIPES
+      </p>
+      <h4>
+        <b>Search</b> Your Favourites
+      </h4>
+      <p id="soft">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreLorem ipsum dolor sit amet, consectetur.
+      </p>
+      <button>
+        Plan
+      </button>
+    </div>
   );
 }
 

@@ -44,6 +44,14 @@ p {
   line-height: 160%;
 }
 
+#hard {
+  font-weight: 700;
+}
+
+#soft {
+  font-weight: 400;
+}
+
 body {
   margin: 0;
   font-family: 'Red Hat Display', -apple-system, BlinkMacSystemFont, 'Segoe UI',
