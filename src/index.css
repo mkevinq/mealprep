@@ -44,9 +44,12 @@ p {
   line-height: 160%;
 }
 
-/*Variations on the p syle with different font weights*/
-#hard {
+/*Variations on the p syle*/
+#subtitle {
   font-weight: 700;
+  color: #6C85AA;
+  padding-top: 33%;
+  padding-bottom: 16px;
 }
 
 #soft {
@@ -72,12 +75,20 @@ button {
 }
 
 /*Positioning for images in the two "highlight" boxes*/
-#left {
+#img_left {
   float: left;
+  padding-left: 15%;
 }
 
-#right {
+#img_right {
   float: right;
+  padding-right: 24%;
+}
+
+/*Class for the "highlight" object/widget*/
+.highlight {
+  background-color:#F8F8FB;
+  min-height: 430px; /*Height of the image*/
 }
 
 body {

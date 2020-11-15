@@ -27,9 +27,10 @@ function App() {
 
           <div>
             <h1>This is a test header</h1>
-            <Highlight />
           </div>
 
+          <Highlight />
+          
         </Route>
       </Switch>
     </Router>
@@ -39,8 +40,8 @@ function App() {
 function Highlight() {
   return (
     <div class="highlight">
-      <img id="right" src={placeholder} alt="Phone" width="214" height="430"/>
-      <p id="hard">
+      <img id="img_right" src={placeholder} alt="Phone" width="214" height="430"/>
+      <p id="subtitle">
         1,000,000+ RECIPES
       </p>
       <h4>
