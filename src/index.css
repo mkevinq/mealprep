@@ -11,7 +11,7 @@
 
 h1 {
   font-size: 48px; /*Largest text I found on figma was 48?*/
-  font-weight: bold;
+  font-weight: normal;
 }
 
 h2 {
@@ -35,8 +35,8 @@ h5 {
 }
 
 h6 {
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 p {
@@ -51,7 +51,6 @@ hr {
 
 /*Variations on the p syle*/
 #subtitle {
-  font-weight: 700;
   color: #6C85AA;
   padding-top: 0%;
   padding-bottom: 16px;
@@ -59,7 +58,6 @@ hr {
 }
 
 #title {
-  font-weight: 700;
   color: #131A2C;
   padding-top: 0px;
   padding-bottom: 28px;
@@ -71,10 +69,11 @@ hr {
   color: #111929;
   padding-top: 31px;
   padding-bottom: 23px;
-  max-width: 429px;
+  max-width: 572px;
   margin: 0px;
 }
 
+/*Button css*/
 button {
   border-radius: 100px;
   margin: 0;
@@ -84,17 +83,25 @@ button {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 20px;
-  width: 141px;
-  height: 51px;
   padding-top: 0px;
   padding-bottom: 0px;
 }
 
 /*Variations on the button style*/
-#green {
+#plan {
   border: none;
   background-color: #74D142;
   color: #FFFFFF;
+  width: 141px;
+  height: 51px;
+}
+
+#learn_more {
+  border: none;
+  background-color: #74D142;
+  color: #FFFFFF;
+  width: 219px;
+  height: 51px;
 }
 
 /*Positioning for text in the two "highlight" boxes*/
@@ -110,7 +117,8 @@ button {
 
 /*Positioning for images in the two "highlight" boxes*/
 #img_left {
-  padding-left: 14%;
+  padding-left: 15%;
+  padding-right: 20%;
 }
 
 #img_right {
@@ -119,12 +127,19 @@ button {
 
 /*Class for the "highlight" object/widget*/
 .highlight {
-  background-color:#F8F8FB;
   min-height: 430px; /*Height of the image*/
   display: flex;
   flex-direction: row;
   padding-top: 190px;
   padding-bottom: 190px;
+}
+
+#highlight1 {
+  background-color:#F8F8FB;
+}
+
+#highlight2 {
+  background-color: #FEFEFE;
 }
 
 body {

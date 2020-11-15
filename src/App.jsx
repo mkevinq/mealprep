@@ -5,6 +5,7 @@ import {
   Link
 } from "react-router-dom";
 import placeholder from "./assets/placeholder_phone.png";
+import placeholder2 from "./assets/placeholder_phones.png";
 
 function App() {
   return (
@@ -29,7 +30,9 @@ function App() {
             <h1>This is a test header</h1>
           </div>
 
-          <Highlight />
+          <Highlight1 />
+
+          <Highlight2 />
 
         </Route>
       </Switch>
@@ -37,13 +40,13 @@ function App() {
   );
 }
 
-function Highlight() {
+function Highlight1() {
   return (
-    <div class="highlight">
+    <div class="highlight" id="highlight1">
       <div id="text_left">
-        <p id="subtitle">
+        <h6 id="subtitle">
           1,000,000+ RECIPES
-        </p>
+        </h6>
         <h1 id="title">
           <b>Search</b> Your Favourites
         </h1>
@@ -51,11 +54,34 @@ function Highlight() {
         <p id="description">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreLorem ipsum dolor sit amet, consectetur.
         </p>
-        <button id="green">
+        <button id="plan">
           Plan
         </button>
       </div>
       <img id="img_right" src={placeholder} alt="Phone" width="214" height="430"/>
+    </div>
+  );
+}
+
+function Highlight2() {
+  return (
+    <div class="highlight" id="highlight2">
+      <img id="img_left" src={placeholder2} alt="Two Phones" width="331" height="428"/>
+      <div id="text_right">
+        <h6 id="subtitle">
+          SECTION 2 SUB TITLE
+        </h6>
+        <h1 id="title">
+          Recipe Ingredients <b>Added</b>
+        </h1>
+        <hr align="left"></hr>
+        <p id="description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreLorem ipsum dolor sit amet, consectetur.
+        </p>
+        <button id="learn_more">
+          Learn More
+        </button>
+      </div>
     </div>
   );
 }
