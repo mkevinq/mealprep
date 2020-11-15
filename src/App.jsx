@@ -30,7 +30,7 @@ function App() {
           </div>
 
           <Highlight />
-          
+
         </Route>
       </Switch>
     </Router>
@@ -40,19 +40,22 @@ function App() {
 function Highlight() {
   return (
     <div class="highlight">
+      <div id="text_left">
+        <p id="subtitle">
+          1,000,000+ RECIPES
+        </p>
+        <h1 id="title">
+          <b>Search</b> Your Favourites
+        </h1>
+        <hr align="left"></hr>
+        <p id="description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreLorem ipsum dolor sit amet, consectetur.
+        </p>
+        <button id="green">
+          Plan
+        </button>
+      </div>
       <img id="img_right" src={placeholder} alt="Phone" width="214" height="430"/>
-      <p id="subtitle">
-        1,000,000+ RECIPES
-      </p>
-      <h4>
-        <b>Search</b> Your Favourites
-      </h4>
-      <p id="soft">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreLorem ipsum dolor sit amet, consectetur.
-      </p>
-      <button id="green">
-        Plan
-      </button>
     </div>
   );
 }

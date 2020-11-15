@@ -10,7 +10,7 @@
 }
 
 h1 {
-  font-size: 72px;
+  font-size: 48px; /*Largest text I found on figma was 48?*/
   font-weight: bold;
 }
 
@@ -44,16 +44,35 @@ p {
   line-height: 160%;
 }
 
+hr {
+  border: 5px solid #74D142;
+  width: 72px;
+}
+
 /*Variations on the p syle*/
 #subtitle {
   font-weight: 700;
   color: #6C85AA;
-  padding-top: 33%;
+  padding-top: 0%;
   padding-bottom: 16px;
+  margin: 0px;
 }
 
-#soft {
+#title {
+  font-weight: 700;
+  color: #131A2C;
+  padding-top: 0px;
+  padding-bottom: 28px;
+  margin: 0px;
+}
+
+#description {
   font-weight: 400;
+  color: #111929;
+  padding-top: 31px;
+  padding-bottom: 23px;
+  max-width: 429px;
+  margin: 0px;
 }
 
 button {
@@ -65,6 +84,10 @@ button {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 20px;
+  width: 141px;
+  height: 51px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 /*Variations on the button style*/
@@ -74,21 +97,34 @@ button {
   color: #FFFFFF;
 }
 
+/*Positioning for text in the two "highlight" boxes*/
+#text_left {
+  padding-left: 10%;
+  padding-right: 0px;
+}
+
+#text_right {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 /*Positioning for images in the two "highlight" boxes*/
 #img_left {
-  float: left;
-  padding-left: 15%;
+  padding-left: 14%;
 }
 
 #img_right {
-  float: right;
-  padding-right: 24%;
+  padding-left: 20%;
 }
 
 /*Class for the "highlight" object/widget*/
 .highlight {
   background-color:#F8F8FB;
   min-height: 430px; /*Height of the image*/
+  display: flex;
+  flex-direction: row;
+  padding-top: 190px;
+  padding-bottom: 190px;
 }
 
 body {
