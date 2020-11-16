@@ -75,7 +75,11 @@ hr {
 
 /*Button css*/
 button {
+  border: none;
   border-radius: 100px;
+  color: #FFFFFF;
+  background-color: #74D142;
+  padding: 15px 40px;
   margin: 0;
   font-family: 'Red Hat Display', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
@@ -83,25 +87,26 @@ button {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 20px;
-  padding-top: 0px;
-  padding-bottom: 0px;
+  line-height: 22px;
 }
 
 /*Variations on the button style*/
-#plan {
-  border: none;
-  background-color: #74D142;
-  color: #FFFFFF;
-  width: 141px;
-  height: 51px;
+#learn_more {
+  border: 1.5px solid #74D142;
+  background-color: transparent;
+  color: #74D142;
 }
 
-#learn_more {
-  border: none;
-  background-color: #74D142;
-  color: #FFFFFF;
-  width: 219px;
-  height: 51px;
+button + button {
+  margin: 26px;
+}
+
+.landing {
+  background-image: linear-gradient(98.02deg, #FFFFFF 24.45%, rgba(255, 255, 255, 0.8) 45.08%, rgba(255, 255, 255, 0) 62.73%), url("./assets/pexels-ella-olsson-1640777\ 2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 300px 7vw;
 }
 
 /*Class for the "highlight" object/widget*/

@@ -31,6 +31,8 @@ function App() {
 
         { /* Landing page */}
         <Route path="/">
+          <Landing />
+
           <Highlight1 />
 
           <Highlight2 />
@@ -81,12 +83,32 @@ function Highlight2() {
         <p id="description">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreLorem ipsum dolor sit amet, consectetur.
         </p>
-        <button id="learn_more">
+        <button id="learn_more2">
           Learn More
         </button>
       </div>
     </div>
   );
+}
+
+function Landing() {
+  return (
+    <div className="landing">
+      <h1 id="title">
+        Welcome to <b>mealprep.</b>
+      </h1>
+      <hr align="left"></hr>
+      <p id="description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreLorem ipsum dolor sit amet, consectetur.
+      </p>
+      <button id="create_plan">
+        Create Plan
+      </button>
+      <button id="learn_more">
+        Learn More
+      </button>
+    </div>
+  )
 }
 
 export default App;
