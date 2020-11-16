@@ -24,8 +24,6 @@ function App() {
           <p>
             This is your API key: {process.env.REACT_APP_SPOONACULAR_APIKEY}
           </p>
-          <Link to="/search">Plan</Link>
-
           <div>
             <h1>This is a test header</h1>
           </div>
@@ -54,9 +52,11 @@ function Highlight1() {
         <p id="description">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreLorem ipsum dolor sit amet, consectetur.
         </p>
-        <button id="plan">
-          Plan
-        </button>
+        <Link to="/search">
+          <button id="plan">
+            Plan
+          </button>
+        </Link>
       </div>
       <img id="img_right" src={placeholder} alt="Phone" width="214" height="430"/>
     </div>
