@@ -104,32 +104,12 @@ button {
   height: 51px;
 }
 
-/*Positioning for text in the two "highlight" boxes*/
-#text_left {
-  padding-left: 10%;
-  padding-right: 0px;
-}
-
-#text_right {
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
-/*Positioning for images in the two "highlight" boxes*/
-#img_left {
-  padding-left: 15%;
-  padding-right: 20%;
-}
-
-#img_right {
-  padding-left: 20%;
-}
-
 /*Class for the "highlight" object/widget*/
 .highlight {
   min-height: 430px; /*Height of the image*/
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
   padding-top: 190px;
   padding-bottom: 190px;
 }
