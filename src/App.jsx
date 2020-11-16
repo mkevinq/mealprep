@@ -19,15 +19,18 @@ function App() {
           <Link to="/">Home</Link>
         </Route>
 
-        { /* Landing page */}
-        <Route path="/">
+        { /* Test page */}
+        <Route path="/test">
           <p>
             This is your API key: {process.env.REACT_APP_SPOONACULAR_APIKEY}
           </p>
           <div>
             <h1>This is a test header</h1>
           </div>
+        </Route>
 
+        { /* Landing page */}
+        <Route path="/">
           <Highlight1 />
 
           <Highlight2 />
