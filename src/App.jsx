@@ -37,6 +37,58 @@ function App() {
 
           <Highlight2 />
 
+          <div className= "continer">
+            {/* Column 1 */}
+            <div className ="col1">
+              <h3>
+                Create Healthy Meal Plan
+              </h3>
+              <hr className ="line"></hr>
+              <p>
+                Lorm ipsum dolor amet, consectetur adipiscing elit, <br></br>
+                sed do eiusmod tempor inciddunt ut labore
+              </p>
+            </div>
+            {/* Column 2 */}
+            <div className ="col2">
+              <button className="browse">Browse</button>
+            </div>
+        </div>
+
+          <div className="container2">
+            <div className ="icon-col">
+              <h6>
+                <strong>
+                  mealprep.
+                </strong>
+              </h6>
+            </div>
+            <div className ="text-col">
+              <div className ="About-col">
+                <p>
+                  <strong>
+                    About
+                  </strong>
+                </p>
+              </div>
+              <div className="Plan-col">
+                <p>
+                  <strong>
+                    Plan
+                  </strong>
+                </p>
+              </div>
+              <div className="Order-col">
+                <p>
+                  <strong>
+                    Order
+                  </strong>
+                </p>
+              </div>
+            </div>
+          </div>
+
+
         </Route>
       </Switch>
     </Router>
