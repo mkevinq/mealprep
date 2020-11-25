@@ -6,6 +6,9 @@ import {
 } from "react-router-dom";
 import placeholder from "./assets/placeholder_phone.png";
 import placeholder2 from "./assets/placeholder_phones.png";
+import logo from './assets/navbar/full-logo.svg';
+import cart from './assets/navbar/cart.svg';
+import account from './assets/navbar/account.svg';
 
 function App() {
   return (
@@ -31,6 +34,22 @@ function App() {
 
         { /* Landing page */}
         <Route path="/">
+          <div class="navbar flex-center">
+            <img id="logo" src={logo} alt="Logo"></img>
+            <div class="right flex-center">
+              <div class="links flex">
+                <p>ABOUT</p>
+                <p>PLAN</p>
+                <p>ORDER</p>
+              </div>
+              <div class="icon-nav flex">
+                <img id="cart-svg" src={cart} alt="Cart"></img>
+                <div class="separator"></div>
+                <img id="account-svg" src={account} alt="Account"></img>
+              </div>
+            </div>
+          </div>
+
           <Landing />
 
           <Highlight1 />

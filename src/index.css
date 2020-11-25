@@ -49,6 +49,47 @@ hr {
   width: 72px;
 }
 
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  font-size: 18px;
+  line-height: 20px;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 10px;
+  background: white;
+  color: #131A2C;
+  z-index: 10;
+}
+
+.navbar .links p {
+  margin: 0px 50px;
+}
+
+.navbar .icon-nav {
+  float: right;
+  margin: 10px 50px;
+}
+
+.navbar #logo {
+  margin: 10px 50px;
+}
+
+.separator {
+  height: 42px;
+  margin: 0px 30px;
+  border: 0.7px solid #131A2C;
+}
+
 /*Variations on the p syle*/
 #subtitle {
   color: #6C85AA;
