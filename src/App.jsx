@@ -4,8 +4,11 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import Card from './Card.jsx';
 import placeholder from "./assets/placeholder_phone.png";
 import placeholder2 from "./assets/placeholder_phones.png";
+import butter_chicken from "./assets/order-page/recipes-images/butter-chicken.png";
+import lime_chicken_burritos from "./assets/order-page/recipes-images/lime-chicken-burrito.png";
 import logo from './assets/navbar/full-logo.svg';
 import cart from './assets/navbar/cart.svg';
 import account from './assets/navbar/account.svg';
@@ -25,8 +28,12 @@ function App() {
             <input id="search_bar" placeholder="What are you looking for?">
             </input>
           </div>
-
-          <Link to="/">Home</Link>
+          
+          <div className='flex'>
+            <Card title='Butter Chicken' rating={4.9} time={45} calories={450} servings={6} imgsrc={butter_chicken}/> 
+            <Card title='Lime Chicken Burritos' rating={4.8} time={30} calories={300} servings={8} imgsrc={lime_chicken_burritos}/> 
+            <Card title='Lime Chicken Burritos' rating={4.9} time={45} calories={450} servings={6} imgsrc={butter_chicken}/> 
+          </div>
 
           <div className= "continer">
             {/* Column 1 */}

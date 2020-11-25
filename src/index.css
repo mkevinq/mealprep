@@ -257,3 +257,14 @@ code {
 .Order-col {
   padding: 30%;
 }
+
+/*For testing purposes*/
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.search {
+  background: #E5E5E5;
+}
