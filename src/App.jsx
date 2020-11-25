@@ -5,8 +5,8 @@ import {
   Link
 } from "react-router-dom";
 import Card from './Card.jsx';
-import placeholder from "./assets/placeholder_phone.png";
-import placeholder2 from "./assets/placeholder_phones.png";
+import iphone from "./assets/homepage/iphone-preview1.png";
+import iphones2 from "./assets/homepage/iphones-preview-2.png";
 import butter_chicken from "./assets/order-page/recipes-images/butter-chicken.png";
 import lime_chicken_burritos from "./assets/order-page/recipes-images/lime-chicken-burrito.png";
 import logo from './assets/navbar/full-logo.svg';
@@ -82,11 +82,11 @@ function App() {
                 </button>
               </Link>
             </div>
-            <img id="img_right" src={placeholder} alt="Phone" width="214" height="430"/>
+            <img id="img_right" src={iphone} alt="Phone" width="214" height="430"/>
           </div>
 
           <div class="highlight" id="highlight2">
-            <img id="img_left" src={placeholder2} alt="Two Phones" width="331" height="428"/>
+            <img id="img_left" src={iphones2} alt="Two Phones" width="455" height="428"/>
             <div id="text_right">
               <h6 id="subtitle">
                 SECTION 2 SUB TITLE
