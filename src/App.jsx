@@ -20,16 +20,71 @@ function App() {
         { /* Search page */}
         <Route path="/search">
           <NavBar />
-          <Link to="/">Home</Link>
-          <div className='search'>
-            <p>
-              This is the search page
-            </p>
-            <Link to="/">Home</Link>
-            <div className='flex'>
-              <Card title='Butter Chicken' rating={4.9} time={45} calories={450} servings={6} imgsrc={butter_chicken}/> 
-              <Card title='Lime Chicken Burritos' rating={4.8} time={30} calories={300} servings={8} imgsrc={lime_chicken_burritos}/> 
-              <Card title='Lime Chicken Burritos' rating={4.9} time={45} calories={450} servings={6} imgsrc={butter_chicken}/> 
+
+          <div className="search">
+            <h1 id="title">
+              Browse Recipes
+            </h1>
+            <input id="search_bar" placeholder="What are you looking for?">
+            </input>
+          </div>
+          
+          <div className='flex'>
+            <Card title='Butter Chicken' rating={4.9} time={45} calories={450} servings={6} imgsrc={butter_chicken}/> 
+            <Card title='Lime Chicken Burritos' rating={4.8} time={30} calories={300} servings={8} imgsrc={lime_chicken_burritos}/> 
+            <Card title='Lime Chicken Burritos' rating={4.9} time={45} calories={450} servings={6} imgsrc={butter_chicken}/> 
+          </div>
+
+          <div className= "continer">
+            {/* Column 1 */}
+            <div className ="col1">
+              <h3>
+                Create Healthy Meal Plan
+              </h3>
+              <hr className ="line"></hr>
+              <p>
+                Lorm ipsum dolor amet, consectetur adipiscing elit, <br></br>
+                sed do eiusmod tempor inciddunt ut labore
+              </p>
+            </div>
+            {/* Column 2 */}
+            <div className ="col2">
+              <button className="browse">Browse</button>
+            </div>
+          </div>
+
+          <div className="container2">
+            <div className ="icon-col">
+              <h6>
+                <strong>
+                  mealprep.
+                </strong>
+              </h6>
+            </div>
+            <div className ="text-col">
+              <div className ="About-col">
+                <Link to="/" style={{textDecoration:"none", color:"#131A2C"}}>
+                  <p>
+                    <strong>
+                      About
+                    </strong>
+                  </p>
+                </Link>
+              </div>
+              <div className="Plan-col">
+                <p>
+                  <strong>
+                    Plan
+                  </strong>
+                </p>
+              </div>
+              <div className="Order-col">
+                <p>
+                  <strong>
+                    Order
+                  </strong>
+                </p>
+              </div>
             </div>
           </div>
         </Route>
@@ -120,7 +175,7 @@ function App() {
             <div className ="col2">
               <button className="browse">Browse</button>
             </div>
-        </div>
+          </div>
 
           <div className="container2">
             <div className ="icon-col">
@@ -132,11 +187,13 @@ function App() {
             </div>
             <div className ="text-col">
               <div className ="About-col">
-                <p>
-                  <strong>
-                    About
-                  </strong>
-                </p>
+                <Link to="/" style={{textDecoration:"none", color:"#131A2C"}}>
+                  <p>
+                    <strong>
+                      About
+                    </strong>
+                  </p>
+                </Link>
               </div>
               <div className="Plan-col">
                 <p>
@@ -168,7 +225,9 @@ function NavBar() {
       <img id="logo" src={logo} alt="Logo"></img>
       <div class="right flex-center">
         <div class="links flex">
-          <p>ABOUT</p>
+          <Link to="/" style={{textDecoration:"none", color:"#131A2C"}}>
+            <p>ABOUT</p>
+          </Link>
           <Link to="/search" style={{textDecoration:"none", color:"#131A2C"}}>
             <p>PLAN</p>
           </Link>
