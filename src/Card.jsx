@@ -9,7 +9,7 @@ function Card(props) {
     return (
         <div className='card'>
             <img id='recipe_image' src={props.imgsrc}></img>
-            <div id='title'>
+            <div id='title-info'>
                 <h5 id='recipe_title'>{props.title}</h5>
                 <div id='rating'>
                     <img id='rating_image' src={star}></img>

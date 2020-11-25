@@ -49,7 +49,7 @@
     height: 172px;
 }
 
-#title {
+#title-info {
     display: flex;
     flex-direction: row;
     align-items: baseline;

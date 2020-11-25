@@ -12,6 +12,9 @@ import lime_chicken_burritos from "./assets/order-page/recipes-images/lime-chick
 import logo from './assets/navbar/full-logo.svg';
 import cart from './assets/navbar/cart.svg';
 import account from './assets/navbar/account.svg';
+import food0 from './assets/order-page/small-dish.png';
+import food1 from './assets/order-page/dish-1.png';
+import food2 from './assets/order-page/dish-2.png';
 
 function App() {
   return (
@@ -22,11 +25,14 @@ function App() {
           <NavBar />
 
           <div className="search">
-            <h1 id="title">
+            <h1 id="search_title">
               Browse Recipes
             </h1>
             <input id="search_bar" placeholder="What are you looking for?">
             </input>
+            <img class="floating-food" id="browse-food-0" src={food0} alt=""></img>
+            <img class="floating-food" id="browse-food-1" src={food1} alt=""></img>
+            <img class="floating-food" id="browse-food-2" src={food2} alt=""></img>
           </div>
           
           <div className='flex'>

@@ -266,5 +266,53 @@ code {
 }
 
 .search {
-  background: #E5E5E5;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 300px;
+}
+
+#search_title {
+  line-height: 44px;
+  font-size: 40px;
+  font-weight: 600;
+  padding: 20px;
+  margin: 0px;
+}
+
+#search_bar {
+  font-family: "Red Hat Display";
+  font-size: 22px;
+  line-height: 22px;
+  color: #B1B1B1;
+  border: 4px solid #74D142;
+  border-radius: 100px;
+  box-sizing: border-box;
+  width: 800px;
+  padding: 25px 40px;
+  margin: 20px;
+}
+
+.floating-food {
+  position: absolute;
+  z-index: -1;
+}
+
+#browse-food-0 {
+  top: 100px;
+  right: 100px;
+  width: 300px;
+}
+
+#browse-food-1 {
+  top: 100px;
+  left: 0;
+  width: 500px;
+}
+
+#browse-food-2 {
+  top: 500px;
+  right: 0;
+  width: 400px;
 }
