@@ -16,9 +16,7 @@ function App() {
       <Switch>
         { /* Search page */}
         <Route path="/search">
-          <p>
-            This is the search page
-          </p>
+          <NavBar />
           <Link to="/">Home</Link>
         </Route>
 
@@ -34,29 +32,63 @@ function App() {
 
         { /* Landing page */}
         <Route path="/">
-          <div class="navbar flex-center">
-            <img id="logo" src={logo} alt="Logo"></img>
-            <div class="right flex-center">
-              <div class="links flex">
-                <p>ABOUT</p>
-                <Link to="/search" style={{textDecoration:"none", color:"#131A2C"}}>
-                  <p>PLAN</p>
-                </Link>
-                <p>ORDER</p>
-              </div>
-              <div class="icon-nav flex">
-                <img id="cart-svg" src={cart} alt="Cart"></img>
-                <div class="separator"></div>
-                <img id="account-svg" src={account} alt="Account"></img>
-              </div>
-            </div>
+          <NavBar />
+
+          <div className="landing">
+            <h1 id="title">
+              Welcome to <b>mealprep.</b>
+            </h1>
+            <hr align="left"></hr>
+            <p id="description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreLorem ipsum dolor sit amet, consectetur.
+            </p>
+            <button id="create_plan">
+              Create Plan
+            </button>
+            <button id="learn_more">
+              Learn More
+            </button>
           </div>
 
-          <Landing />
+          <div class="highlight" id="highlight1">
+            <div id="text_left">
+              <h6 id="subtitle">
+                1,000,000+ RECIPES
+              </h6>
+              <h1 id="title">
+                <b>Search</b> Your Favourites
+              </h1>
+              <hr align="left"></hr>
+              <p id="description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreLorem ipsum dolor sit amet, consectetur.
+              </p>
+              <Link to="/search">
+                <button id="plan">
+                  Plan
+                </button>
+              </Link>
+            </div>
+            <img id="img_right" src={placeholder} alt="Phone" width="214" height="430"/>
+          </div>
 
-          <Highlight1 />
-
-          <Highlight2 />
+          <div class="highlight" id="highlight2">
+            <img id="img_left" src={placeholder2} alt="Two Phones" width="331" height="428"/>
+            <div id="text_right">
+              <h6 id="subtitle">
+                SECTION 2 SUB TITLE
+              </h6>
+              <h1 id="title">
+                Recipe Ingredients <b>Added</b>
+              </h1>
+              <hr align="left"></hr>
+              <p id="description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreLorem ipsum dolor sit amet, consectetur.
+              </p>
+              <button id="learn_more2">
+                Learn More
+              </button>
+            </div>
+          </div>
 
           <div className= "continer">
             {/* Column 1 */}
@@ -116,70 +148,24 @@ function App() {
   );
 }
 
-function Highlight1() {
+function NavBar() {
   return (
-    <div class="highlight" id="highlight1">
-      <div id="text_left">
-        <h6 id="subtitle">
-          1,000,000+ RECIPES
-        </h6>
-        <h1 id="title">
-          <b>Search</b> Your Favourites
-        </h1>
-        <hr align="left"></hr>
-        <p id="description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreLorem ipsum dolor sit amet, consectetur.
-        </p>
-        <Link to="/search">
-          <button id="plan">
-            Plan
-          </button>
-        </Link>
+    <div class="navbar flex-center">
+      <img id="logo" src={logo} alt="Logo"></img>
+      <div class="right flex-center">
+        <div class="links flex">
+          <p>ABOUT</p>
+          <Link to="/search" style={{textDecoration:"none", color:"#131A2C"}}>
+            <p>PLAN</p>
+          </Link>
+          <p>ORDER</p>
+        </div>
+        <div class="icon-nav flex">
+          <img id="cart-svg" src={cart} alt="Cart"></img>
+          <div class="separator"></div>
+          <img id="account-svg" src={account} alt="Account"></img>
+        </div>
       </div>
-      <img id="img_right" src={placeholder} alt="Phone" width="214" height="430"/>
-    </div>
-  );
-}
-
-function Highlight2() {
-  return (
-    <div class="highlight" id="highlight2">
-      <img id="img_left" src={placeholder2} alt="Two Phones" width="331" height="428"/>
-      <div id="text_right">
-        <h6 id="subtitle">
-          SECTION 2 SUB TITLE
-        </h6>
-        <h1 id="title">
-          Recipe Ingredients <b>Added</b>
-        </h1>
-        <hr align="left"></hr>
-        <p id="description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreLorem ipsum dolor sit amet, consectetur.
-        </p>
-        <button id="learn_more2">
-          Learn More
-        </button>
-      </div>
-    </div>
-  );
-}
-
-function Landing() {
-  return (
-    <div className="landing">
-      <h1 id="title">
-        Welcome to <b>mealprep.</b>
-      </h1>
-      <hr align="left"></hr>
-      <p id="description">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreLorem ipsum dolor sit amet, consectetur.
-      </p>
-      <button id="create_plan">
-        Create Plan
-      </button>
-      <button id="learn_more">
-        Learn More
-      </button>
     </div>
   )
 }
