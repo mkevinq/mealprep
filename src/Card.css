@@ -1,11 +1,44 @@
 /*Class for the "card" object/widget*/
 .card {
     /*min-height: 430px; Height of the image*/
-    padding-top: 0px;
+    border: none;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+}
+
+.descriptor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/*Describes the font for a recipe card*/
+.recipe {
+    margin: 0;
+    font-family: 'Cabin', 'Red Hat Display', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+        'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+        'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 #desc {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+}
+
+#recipe_image {
+    width: 375px;
+    height: 172px;
+}
+
+#recipe_title {
+    font-size: 20;
+}
+
+#rating {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
 }

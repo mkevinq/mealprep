@@ -4,8 +4,11 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import Card from './Card.jsx';
 import placeholder from "./assets/placeholder_phone.png";
 import placeholder2 from "./assets/placeholder_phones.png";
+import butter_chicken from "./assets/order-page/recipes-images/butter-chicken.png";
+import lime_chicken_burritos from "./assets/order-page/recipes-images/lime-chicken-burrito.png";
 
 function App() {
   return (
@@ -13,10 +16,17 @@ function App() {
       <Switch>
         { /* Search page */}
         <Route path="/search">
-          <p>
-            This is the search page
-          </p>
-          <Link to="/">Home</Link>
+          <div className='search'>
+            <p>
+              This is the search page
+            </p>
+            <Link to="/">Home</Link>
+            <div className='flex'>
+              <Card title='Butter Chicken' rating={4.9} time={45} calories={450} servings={6} imgsrc={butter_chicken}/> 
+              <Card title='Lime Chicken Burritos' rating={4.8} time={30} calories={300} servings={8} imgsrc={lime_chicken_burritos}/> 
+              <Card title='Lime Chicken Burritos' rating={4.9} time={45} calories={450} servings={6} imgsrc={butter_chicken}/> 
+            </div>
+          </div>
         </Route>
 
         { /* Test page */}
