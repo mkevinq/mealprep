@@ -12,22 +12,22 @@ function Card(props) {
             <div id='title'>
                 <h5 id='recipe_title'>{props.title}</h5>
                 <div id='rating'>
-                    <img src={star}></img>
-                    <h6>{props.rating}</h6>
+                    <img id='rating_image' src={star}></img>
+                    <h6 id='rating_num'>{props.rating}</h6>
                 </div>
             </div>
             <div id='desc'>
                 <div className='descriptor'>
-                    <img src={alarm_clock}></img>
-                    <p>{props.time} Minutes</p> 
+                    <img className='descriptor_image' src={alarm_clock}></img>
+                    <p className='descriptor_text'>{props.time} Minutes</p> 
                 </div>
                 <div className='descriptor'>
-                    <img src={lightning_bolt}></img>
-                    <p>{props.calories} Calories</p>
+                    <img className='descriptor_image' src={lightning_bolt}></img>
+                    <p className='descriptor_text'>{props.calories} Calories</p>
                 </div>
                 <div className='descriptor'>
-                    <img src={person}></img>
-                    <p>{props.servings} Servings</p>
+                    <img className='descriptor_image' src={person}></img>
+                    <p className='descriptor_text'>{props.servings} Servings</p>
                 </div>
             </div>
         </div>
