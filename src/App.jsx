@@ -39,7 +39,9 @@ function App() {
             <div class="right flex-center">
               <div class="links flex">
                 <p>ABOUT</p>
-                <p>PLAN</p>
+                <Link to="/search" style={{textDecoration:"none", color:"#131A2C"}}>
+                  <p>PLAN</p>
+                </Link>
                 <p>ORDER</p>
               </div>
               <div class="icon-nav flex">
