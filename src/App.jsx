@@ -34,11 +34,30 @@ function App() {
             <img class="floating-food" id="browse-food-1" src={food1} alt=""></img>
             <img class="floating-food" id="browse-food-2" src={food2} alt=""></img>
           </div>
-          
+
+          { /* Header */}
+          <div className = "search-headers">
+            <h1 id="title">
+              <b>Search Your Favourites</b>
+            </h1>
+            <hr align="left"></hr>
+            <p id="description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreLorem ipsum dolor sit amet, consectetur.
+            </p>
+          </div>
+
           <div className='flex'>
             <Card title='Butter Chicken' rating={4.9} time={45} calories={450} servings={6} imgsrc={butter_chicken}/> 
             <Card title='Lime Chicken Burritos' rating={4.8} time={30} calories={300} servings={8} imgsrc={lime_chicken_burritos}/> 
             <Card title='Lime Chicken Burritos' rating={4.9} time={45} calories={450} servings={6} imgsrc={butter_chicken}/> 
+          </div>
+
+          { /* Header */}
+          <div className = "search-headers">
+            <h1 id="title">
+              <b>On the menu this week</b>
+            </h1>
+            <hr align="left"></hr>
           </div>
 
           <div className= "continer">
@@ -61,11 +80,7 @@ function App() {
 
           <div className="container2">
             <div className ="icon-col">
-              <h6>
-                <strong>
-                  mealprep.
-                </strong>
-              </h6>
+              <img id="logo" src={logo} alt="Logo"></img>
             </div>
             <div className ="text-col">
               <div className ="About-col">
@@ -185,11 +200,7 @@ function App() {
 
           <div className="container2">
             <div className ="icon-col">
-              <h6>
-                <strong>
-                  mealprep.
-                </strong>
-              </h6>
+              <img id="logo" src={logo} alt="Logo"></img>
             </div>
             <div className ="text-col">
               <div className ="About-col">

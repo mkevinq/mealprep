@@ -182,6 +182,13 @@ code {
     monospace;
 }
 
+/* Headers on the search page */
+.search-headers {
+  padding-left: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
 /* BLACK SECTION OF FOOTER */
 .continer {
   background-color: #111111;
@@ -231,9 +238,9 @@ code {
 
 /* column in the white section of the footer containing the logo*/
 .icon-col {
-  /* -----  PUT LOGO IMAGE HERE FOR FOOTER ----- */
   width: 70%;
   margin-left: 10%;
+  padding-top: 3%;
 }
 
 /* column in the white section of the footer containing text*/
