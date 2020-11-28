@@ -150,6 +150,169 @@ button + button {
   padding: 300px 7vw;
 }
 
+#magnifying_glass {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  left: 145px;
+  top: 1005px;
+  
+}
+#two_million {
+  position: absolute;
+width: 374px;
+height: 20px;
+left: 145px;
+top: 1097px;
+
+font-family: 'Neue Einstellung';
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 20px;
+text-transform: uppercase;
+color: #74D142;
+}
+#browse {
+  position: absolute;
+width: 374px;
+height: 40px;
+left: 145px;
+top: 1130px;
+
+font-family: 'Neue Einstellung';
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 40px;
+color: #131A2C;
+}
+#lorem_ipsum {
+  position: absolute;
+width: 322px;
+height: 84px;
+left: 145px;
+top: 1186px;
+
+font-family: 'Neue Einstellung';
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 28px;
+color: #111929;
+
+}
+#steps{
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  top: 1005px;
+  left: 600px;
+  
+}
+#health{
+  position: absolute;
+width: 374px;
+height: 20px;
+left: 550px;
+top: 1097px;
+
+font-family: 'Neue Einstellung';
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 20px;
+text-transform: uppercase;
+color: #74D142;
+}
+#create{
+  position: absolute;
+width: 374px;
+height: 40px;
+left: 550px;
+top: 1130px;
+
+font-family: 'Neue Einstellung';
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 40px;
+
+color: #131A2C;
+}
+#lorem_ipsum2 {
+  position: absolute;
+width: 322px;
+height: 84px;
+left: 550px;
+top: 1186px;
+
+font-family: 'Neue Einstellung';
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 28px;
+}
+#truck {
+  position: absolute;
+width: 48px;
+height: 33.24px;
+left: 955px;
+top: 1020px;
+
+
+border: 2px solid #131A2C;
+}
+#local {
+  position: absolute;
+  width: 374px;
+  height: 20px;
+  left: 955px;
+  top: 1097px;
+  
+  font-family: 'Neue Einstellung';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  
+  text-transform: uppercase;
+  
+  color: #74D142;
+}
+#groceries {
+  position: absolute;
+width: 374px;
+height: 40px;
+left: 955px;
+top: 1130px;
+
+font-family: 'Neue Einstellung';
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 40px;
+
+color: #131A2C;
+
+}
+#lorem_ipsum3 {
+  position: absolute;
+width: 322px;
+height: 84px;
+left: 955px;
+top: 1186px;
+
+font-family: 'Neue Einstellung';
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 28px;
+
+
+color: #111929;
+
+}
 /*Class for the "highlight" object/widget*/
 .highlight {
   min-height: 430px; /*Height of the image*/
@@ -172,7 +335,7 @@ body {
   margin: 0;
   font-family: 'Red Hat Display', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
-    'Helvetica Neue', sans-serif;
+    'Helvetica Neue', sans-serif, 'Neue Einstellung';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -180,13 +343,6 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
-
-/* Headers on the search page */
-.search-headers {
-  padding-left: 10%;
-  padding-top: 5%;
-  padding-bottom: 5%;
 }
 
 /* BLACK SECTION OF FOOTER */
@@ -238,9 +394,9 @@ code {
 
 /* column in the white section of the footer containing the logo*/
 .icon-col {
+  /* -----  PUT LOGO IMAGE HERE FOR FOOTER ----- */
   width: 70%;
   margin-left: 10%;
-  padding-top: 3%;
 }
 
 /* column in the white section of the footer containing text*/
@@ -263,63 +419,4 @@ code {
 /* */
 .Order-col {
   padding: 30%;
-}
-
-/*For testing purposes*/
-.flex {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-.search {
-  background: transparent;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 300px;
-}
-
-#search_title {
-  line-height: 44px;
-  font-size: 40px;
-  font-weight: 600;
-  padding: 20px;
-  margin: 0px;
-}
-
-#search_bar {
-  font-family: "Red Hat Display";
-  font-size: 22px;
-  line-height: 22px;
-  color: #B1B1B1;
-  border: 4px solid #74D142;
-  border-radius: 100px;
-  box-sizing: border-box;
-  width: 800px;
-  padding: 25px 40px;
-  margin: 20px;
-}
-
-.floating-food {
-  position: absolute;
-  z-index: -1;
-}
-
-#browse-food-0 {
-  top: 100px;
-  right: 100px;
-  width: 300px;
-}
-
-#browse-food-1 {
-  top: 100px;
-  left: 0;
-  width: 500px;
-}
-
-#browse-food-2 {
-  top: 500px;
-  right: 0;
-  width: 400px;
 }
