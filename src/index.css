@@ -323,3 +323,8 @@ code {
   right: 0;
   width: 400px;
 }
+
+.carousel {
+  width: 1800px;
+  height: 1400px;
+}
