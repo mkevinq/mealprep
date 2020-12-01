@@ -4,7 +4,6 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import { Carousel } from "react-responsive-carousel";
 import Card from './Card.jsx';
 import iphone from "./assets/homepage/iphone-preview1.png";
 import iphones2 from "./assets/homepage/iphones-preview-2.png";
@@ -47,13 +46,7 @@ function App() {
             </p>
           </div>
 
-          <Carousel>
-            <div>
-              <Card title='Butter Chicken' rating={4.9} time={45} calories={450} servings={6} imgsrc={butter_chicken}/> 
-              <Card title='Lime Chicken Burritos' rating={4.8} time={30} calories={300} servings={8} imgsrc={lime_chicken_burritos}/> 
-              <Card title='Lime Chicken Burritos' rating={4.9} time={45} calories={450} servings={6} imgsrc={butter_chicken}/> 
-            </div>
-          </Carousel>
+          <Test/>
 
           <div className='flex'>
             <Card title='Butter Chicken' rating={4.9} time={45} calories={450} servings={6} imgsrc={butter_chicken}/> 
