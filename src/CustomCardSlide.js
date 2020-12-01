@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { Slide } from "pure-react-carousel";
 import React from "react";
-import { Card } from "semantic-ui-react";
+import Card from "./Card.jsx";
 
 const CustomCardSlide = ({ index, ...cardProps }) => (
   <Slide index={index}>

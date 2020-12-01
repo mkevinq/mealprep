@@ -1,8 +1,9 @@
 import { CarouselProvider, Slider, ButtonBack, ButtonNext } from "pure-react-carousel";
 import React from "react";
-
-import CustomCardSlide from "../components/CustomCardSlide";
-import CustomDotGroup from "../components/CustomDotGroup";
+import butter_chicken from "./assets/order-page/recipes-images/butter-chicken.png";
+import lime_chicken_burritos from "./assets/order-page/recipes-images/lime-chicken-burrito.png";
+import CustomCardSlide from "./CustomCardSlide.js";
+import './CardCarousel.css';
 
 const CardCarousel = () => (
   <CarouselProvider
@@ -10,44 +11,61 @@ const CardCarousel = () => (
     naturalSlideHeight={1.25}
     totalSlides={6}
     visibleSlides={3}
-    style={{ width: "900px" }}
   >
-    <Slider>
+    <Slider id={"slider"}>
       <CustomCardSlide
-        image="https://place-hold.it/800x800&text=Matthew&fontsize=32"
-        index={0}
-        header="Matthew House"
-        meta="Friend"
+        id={0}
+        title='Butter Chicken' 
+        rating={4.9} 
+        time={45} 
+        calories={450} 
+        servings={6} 
+        imgsrc={butter_chicken}
       />
       <CustomCardSlide
-        header="Elliot Baker"
-        image="https://place-hold.it/800x800&text=Elliot&fontsize=32"
-        index={1}
-        meta="Friend"
+        id={1}
+        title='Lime Chicken Burritos' 
+        rating={4.8} 
+        time={30} 
+        calories={300} 
+        servings={8} 
+        imgsrc={lime_chicken_burritos}
       />
       <CustomCardSlide
-        header="Steve Sanders"
-        image="https://place-hold.it/800x800&text=Steve&fontsize=32"
-        index={2}
-        meta="Friend"
+        id={2}
+        title='Lime Chicken Burritos' 
+        rating={4.9} 
+        time={45} 
+        calories={450} 
+        servings={6} 
+        imgsrc={butter_chicken}
       />
       <CustomCardSlide
-        header="Maky Brake"
-        image="https://place-hold.it/800x800&text=Maky&fontsize=32"
-        index={3}
-        meta="Friend"
+        id={3}
+        title='Butter Chicken' 
+        rating={4.9} 
+        time={45} 
+        calories={450} 
+        servings={6} 
+        imgsrc={butter_chicken}
       />
       <CustomCardSlide
-        header="Lotta Hart"
-        image="https://place-hold.it/800x800&text=Lotta&fontsize=32"
-        index={4}
-        meta="Friend"
+        id={4}
+        title='Lime Chicken Burritos' 
+        rating={4.8} 
+        time={30} 
+        calories={300} 
+        servings={8} 
+        imgsrc={lime_chicken_burritos}
       />
       <CustomCardSlide
-        header="Phoenix Wright"
-        image="https://place-hold.it/800x800&text=Phoenix&fontsize=32"
-        index={5}
-        meta="Friend"
+        id={5}
+        title='Lime Chicken Burritos' 
+        rating={4.9} 
+        time={45} 
+        calories={450} 
+        servings={6} 
+        imgsrc={butter_chicken}
       />
     </Slider>
 

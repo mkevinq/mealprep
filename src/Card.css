@@ -47,6 +47,7 @@
 #recipe_image {
     width: 375px;
     height: 172px;
+    object-fit: cover;
 }
 
 #title-info {

@@ -5,6 +5,7 @@ import {
   Link
 } from "react-router-dom";
 import Card from './Card.jsx';
+import CardCarousel from './CardCarousel.js';
 import iphone from "./assets/homepage/iphone-preview1.png";
 import iphones2 from "./assets/homepage/iphones-preview-2.png";
 import butter_chicken from "./assets/order-page/recipes-images/butter-chicken.png";
@@ -15,6 +16,8 @@ import account from './assets/navbar/account.svg';
 import food0 from './assets/order-page/small-dish.png';
 import food1 from './assets/order-page/dish-1.png';
 import food2 from './assets/order-page/dish-2.png';
+// Don't forget to setyp required CSS!
+import "pure-react-carousel/dist/react-carousel.es.css";
 
 function App() {
   return (
@@ -46,7 +49,7 @@ function App() {
             </p>
           </div>
 
-          <Test/>
+          <CardCarousel/>
 
           <div className='flex'>
             <Card title='Butter Chicken' rating={4.9} time={45} calories={450} servings={6} imgsrc={butter_chicken}/> 
