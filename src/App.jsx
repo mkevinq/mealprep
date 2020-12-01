@@ -23,8 +23,8 @@ function App() {
   return (
     <Router>
       <Switch>
-        { /* Search page */}
-        <Route path="/search">
+        { /* Plan page */}
+        <Route path="/plan">
           <NavBar />
 
           <div className="search">
@@ -96,7 +96,7 @@ function App() {
                 </Link>
               </div>
               <div className="Plan-col">
-                <Link to="/search" style={{textDecoration:"none", color:"#131A2C"}}>
+                <Link to="/plan" style={{textDecoration:"none", color:"#131A2C"}}>
                   <p>
                     <strong>
                       Plan
@@ -197,7 +197,7 @@ function App() {
               <p id="description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreLorem ipsum dolor sit amet, consectetur.
               </p>
-              <Link to="/search">
+              <Link to="/plan">
                 <button id="plan">
                   Plan
                 </button>
@@ -258,7 +258,7 @@ function App() {
                 </Link>
               </div>
               <div className="Plan-col">
-                <Link to="/search" style={{textDecoration:"none", color:"#131A2C"}}>
+                <Link to="/plan" style={{textDecoration:"none", color:"#131A2C"}}>
                   <p>
                     <strong>
                       Plan
@@ -292,7 +292,7 @@ function NavBar() {
           <Link to="/" style={{textDecoration:"none", color:"#131A2C"}}>
             <p>ABOUT</p>
           </Link>
-          <Link to="/search" style={{textDecoration:"none", color:"#131A2C"}}>
+          <Link to="/plan" style={{textDecoration:"none", color:"#131A2C"}}>
             <p>PLAN</p>
           </Link>
           <p>ORDER</p>
