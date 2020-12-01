@@ -11,7 +11,9 @@ const CardCarousel = () => (
     naturalSlideHeight={1.25}
     totalSlides={6}
     visibleSlides={3}
+    id={"carousel"}
   >
+    <ButtonBack className={"carousel_button"} id={"left_button"}>&larr;</ButtonBack>
     <Slider id={"slider"}>
       <CustomCardSlide
         id={0}
@@ -68,9 +70,7 @@ const CardCarousel = () => (
         imgsrc={butter_chicken}
       />
     </Slider>
-
-    <ButtonBack>Back</ButtonBack>
-    <ButtonNext>Next</ButtonNext>
+    <ButtonNext className={"carousel_button"} id={"right_button"}>&rarr;</ButtonNext>
   </CarouselProvider>
 );
 

@@ -45,8 +45,7 @@
 }
 
 #recipe_image {
-    width: 375px;
-    height: 172px;
+    max-width: 100%;
     object-fit: cover;
 }
 
