@@ -13,6 +13,9 @@ import lime_chicken_burritos from "./assets/order-page/recipes-images/lime-chick
 import logo from './assets/navbar/full-logo.svg';
 import cart from './assets/navbar/cart.svg';
 import account from './assets/navbar/account.svg';
+import magnify from './assets/homepage/magnify-icon.svg';
+import plan_steps from './assets/homepage/plan-icon.svg';
+import delivery from './assets/homepage/delivery-icon.svg';
 import food0 from './assets/order-page/small-dish.png';
 import food1 from './assets/order-page/dish-1.png';
 import food2 from './assets/order-page/dish-2.png';
@@ -23,8 +26,8 @@ function App() {
   return (
     <Router>
       <Switch>
-        { /* Search page */}
-        <Route path="/search">
+        { /* Plan page */}
+        <Route path="/plan">
           <NavBar />
 
           <div className="search">
@@ -39,7 +42,7 @@ function App() {
           </div>
 
           { /* Header */}
-          <div className = "search-headers">
+          <div className="search-headers">
             <h1 id="title">
               <b>Search Your Favourites</b>
             </h1>
@@ -52,7 +55,7 @@ function App() {
           <CardCarousel/>
 
           { /* Header */}
-          <div className = "search-headers">
+          <div className="search-headers">
             <h1 id="title">
               <b>On the menu this week</b>
             </h1>
@@ -80,11 +83,11 @@ function App() {
           <div className= "continer">
             {/* Column 1 */}
             <div className ="col1">
-              <h3>
+              <h3 className="footer-title">
                 Create Healthy Meal Plan
               </h3>
-              <hr className ="line"></hr>
-              <p>
+              <hr align="left"></hr>
+              <p className="footer-description">
                 Lorm ipsum dolor amet, consectetur adipiscing elit, <br></br>
                 sed do eiusmod tempor inciddunt ut labore
               </p>
@@ -110,11 +113,13 @@ function App() {
                 </Link>
               </div>
               <div className="Plan-col">
-                <p>
-                  <strong>
-                    Plan
-                  </strong>
-                </p>
+                <Link to="/plan" style={{textDecoration:"none", color:"#131A2C"}}>
+                  <p>
+                    <strong>
+                      Plan
+                    </strong>
+                  </p>
+                </Link>
               </div>
               <div className="Order-col">
                 <p>
@@ -157,6 +162,46 @@ function App() {
             </button>
           </div>
 
+
+          <div className="flex cards">
+            <div className="card">
+              <img className="card-icon" src={magnify} alt="magnifying glass" height="48"/>
+              <h2 className="card-header-1">
+                Over 2,000,000+
+              </h2>
+              <h1 className="card-header-2">
+                Browse Recipies
+              </h1>
+              <div id="lorem_ipsum">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+              </div>
+            </div>
+            <div className="card">
+              <img className="card-icon" src={plan_steps} alt="plan" height="48"/>
+              <h2 className="card-header-1">
+                Healthy &amp; affordable
+              </h2>
+              <h1 className="card-header-2">
+                Create Plan
+              </h1>
+              <div id="lorem_ipsum2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+              </div>
+            </div>
+            <div className="card">
+              <img className="card-icon" src={delivery} alt="delivery truck" height="48"/>
+              <h2 className="card-header-1">
+                Locally Sourced
+              </h2>
+              <h1 className="card-header-2">
+                Groceries Delivered
+              </h1>
+              <div id="lorem_ipsum3">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+              </div>
+            </div>
+          </div>
+
           <div class="highlight" id="highlight1">
             <div id="text_left">
               <h6 id="subtitle">
@@ -169,7 +214,7 @@ function App() {
               <p id="description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreLorem ipsum dolor sit amet, consectetur.
               </p>
-              <Link to="/search">
+              <Link to="/plan">
                 <button id="plan">
                   Plan
                 </button>
@@ -200,11 +245,11 @@ function App() {
           <div className= "continer">
             {/* Column 1 */}
             <div className ="col1">
-              <h3>
+              <h3 className="footer-title">
                 Create Healthy Meal Plan
               </h3>
-              <hr className ="line"></hr>
-              <p>
+              <hr align="left"></hr>
+              <p className="footer-description">
                 Lorm ipsum dolor amet, consectetur adipiscing elit, <br></br>
                 sed do eiusmod tempor inciddunt ut labore
               </p>
@@ -230,11 +275,13 @@ function App() {
                 </Link>
               </div>
               <div className="Plan-col">
-                <p>
-                  <strong>
-                    Plan
-                  </strong>
-                </p>
+                <Link to="/plan" style={{textDecoration:"none", color:"#131A2C"}}>
+                  <p>
+                    <strong>
+                      Plan
+                    </strong>
+                  </p>
+                </Link>
               </div>
               <div className="Order-col">
                 <p>
@@ -262,7 +309,7 @@ function NavBar() {
           <Link to="/" style={{textDecoration:"none", color:"#131A2C"}}>
             <p>ABOUT</p>
           </Link>
-          <Link to="/search" style={{textDecoration:"none", color:"#131A2C"}}>
+          <Link to="/plan" style={{textDecoration:"none", color:"#131A2C"}}>
             <p>PLAN</p>
           </Link>
           <p>ORDER</p>
