@@ -12,6 +12,9 @@ import lime_chicken_burritos from "./assets/order-page/recipes-images/lime-chick
 import logo from './assets/navbar/full-logo.svg';
 import cart from './assets/navbar/cart.svg';
 import account from './assets/navbar/account.svg';
+import magnify from './assets/homepage/magnify-icon.svg';
+import plan_steps from './assets/homepage/plan-icon.svg';
+import delivery from './assets/homepage/delivery-icon.svg';
 import food0 from './assets/order-page/small-dish.png';
 import food1 from './assets/order-page/dish-1.png';
 import food2 from './assets/order-page/dish-2.png';
@@ -36,7 +39,7 @@ function App() {
           </div>
 
           { /* Header */}
-          <div className = "search-headers">
+          <div className="search-headers">
             <h1 id="title">
               <b>Search Your Favourites</b>
             </h1>
@@ -53,7 +56,7 @@ function App() {
           </div>
 
           { /* Header */}
-          <div className = "search-headers">
+          <div className="search-headers">
             <h1 id="title">
               <b>On the menu this week</b>
             </h1>
@@ -138,6 +141,46 @@ function App() {
             <button id="learn_more">
               Learn More
             </button>
+          </div>
+
+
+          <div className="flex cards">
+            <div className="card">
+              <img className="card-icon" src={magnify} alt="magnifying glass" height="48"/>
+              <h2 className="card-header-1">
+                Over 2,000,000+
+              </h2>
+              <h1 className="card-header-2">
+                Browse Recipies
+              </h1>
+              <div id="lorem_ipsum">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+              </div>
+            </div>
+            <div className="card">
+              <img className="card-icon" src={plan_steps} alt="plan" height="48"/>
+              <h2 className="card-header-1">
+                Healthy &amp; affordable
+              </h2>
+              <h1 className="card-header-2">
+                Create Plan
+              </h1>
+              <div id="lorem_ipsum2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+              </div>
+            </div>
+            <div className="card">
+              <img className="card-icon" src={delivery} alt="delivery truck" height="48"/>
+              <h2 className="card-header-1">
+                Locally Sourced
+              </h2>
+              <h1 className="card-header-2">
+                Groceries Delivered
+              </h1>
+              <div id="lorem_ipsum3">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+              </div>
+            </div>
           </div>
 
           <div class="highlight" id="highlight1">
