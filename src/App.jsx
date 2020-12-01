@@ -66,11 +66,11 @@ function App() {
           <div className= "continer">
             {/* Column 1 */}
             <div className ="col1">
-              <h3>
+              <h3 className="footer-title">
                 Create Healthy Meal Plan
               </h3>
-              <hr className ="line"></hr>
-              <p>
+              <hr align="left"></hr>
+              <p className="footer-description">
                 Lorm ipsum dolor amet, consectetur adipiscing elit, <br></br>
                 sed do eiusmod tempor inciddunt ut labore
               </p>
@@ -96,11 +96,13 @@ function App() {
                 </Link>
               </div>
               <div className="Plan-col">
-                <p>
-                  <strong>
-                    Plan
-                  </strong>
-                </p>
+                <Link to="/search" style={{textDecoration:"none", color:"#131A2C"}}>
+                  <p>
+                    <strong>
+                      Plan
+                    </strong>
+                  </p>
+                </Link>
               </div>
               <div className="Order-col">
                 <p>
@@ -226,11 +228,11 @@ function App() {
           <div className= "continer">
             {/* Column 1 */}
             <div className ="col1">
-              <h3>
+              <h3 className="footer-title">
                 Create Healthy Meal Plan
               </h3>
-              <hr className ="line"></hr>
-              <p>
+              <hr align="left"></hr>
+              <p className="footer-description">
                 Lorm ipsum dolor amet, consectetur adipiscing elit, <br></br>
                 sed do eiusmod tempor inciddunt ut labore
               </p>
@@ -256,11 +258,13 @@ function App() {
                 </Link>
               </div>
               <div className="Plan-col">
-                <p>
-                  <strong>
-                    Plan
-                  </strong>
-                </p>
+                <Link to="/search" style={{textDecoration:"none", color:"#131A2C"}}>
+                  <p>
+                    <strong>
+                      Plan
+                    </strong>
+                  </p>
+                </Link>
               </div>
               <div className="Order-col">
                 <p>
