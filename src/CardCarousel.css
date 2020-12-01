@@ -1,23 +1,23 @@
 #carousel {
     max-width: 100%;
     max-height: 500px;
+    margin: auto;
 }
 
 #slider {
-    padding-left: 5%;
-    max-width: 100%;
-    max-height: 60%;
+    margin: 0 auto;
+    max-width: 80%;
+    max-height: 80%;
+    display: block;
 }
 
 .carousel_button {
-    max-height: 25%;
+    margin: 0;
+    margin-right: 2%;
 }
 
-#left_button {
-    float: left;
-    
-}
-
-#right_button {
-    float: right;
+#carousel_buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }

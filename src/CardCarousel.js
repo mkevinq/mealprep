@@ -13,7 +13,6 @@ const CardCarousel = () => (
     visibleSlides={3}
     id={"carousel"}
   >
-    <ButtonBack className={"carousel_button"} id={"left_button"}>&larr;</ButtonBack>
     <Slider id={"slider"}>
       <CustomCardSlide
         id={0}
@@ -70,7 +69,10 @@ const CardCarousel = () => (
         imgsrc={butter_chicken}
       />
     </Slider>
-    <ButtonNext className={"carousel_button"} id={"right_button"}>&rarr;</ButtonNext>
+    <div id="carousel_buttons">
+      <ButtonBack className={"carousel_button"}>&larr;</ButtonBack>
+      <ButtonNext className={"carousel_button"}>&rarr;</ButtonNext>
+    </div>
   </CarouselProvider>
 );
 

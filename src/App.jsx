@@ -51,18 +51,30 @@ function App() {
 
           <CardCarousel/>
 
-          <div className='flex'>
-            <Card title='Butter Chicken' rating={4.9} time={45} calories={450} servings={6} imgsrc={butter_chicken}/> 
-            <Card title='Lime Chicken Burritos' rating={4.8} time={30} calories={300} servings={8} imgsrc={lime_chicken_burritos}/> 
-            <Card title='Lime Chicken Burritos' rating={4.9} time={45} calories={450} servings={6} imgsrc={butter_chicken}/> 
-          </div>
-
           { /* Header */}
           <div className = "search-headers">
             <h1 id="title">
               <b>On the menu this week</b>
             </h1>
             <hr align="left"></hr>
+          </div>
+
+          <div>
+            <div className='flex' id='examples'>
+              <Card title='Butter Chicken' rating={4.9} time={45} calories={450} servings={6} imgsrc={butter_chicken}/> 
+              <Card title='Lime Chicken Burritos' rating={4.8} time={30} calories={300} servings={8} imgsrc={lime_chicken_burritos}/> 
+              <Card title='Lime Chicken Burritos' rating={4.9} time={45} calories={450} servings={6} imgsrc={butter_chicken}/> 
+            </div>
+            <div className='flex' id='examples'>
+              <Card title='Butter Chicken' rating={4.9} time={45} calories={450} servings={6} imgsrc={butter_chicken}/> 
+              <Card title='Lime Chicken Burritos' rating={4.8} time={30} calories={300} servings={8} imgsrc={lime_chicken_burritos}/> 
+              <Card title='Lime Chicken Burritos' rating={4.9} time={45} calories={450} servings={6} imgsrc={butter_chicken}/> 
+            </div>
+            <div className='flex' id='examples'>
+              <Card title='Butter Chicken' rating={4.9} time={45} calories={450} servings={6} imgsrc={butter_chicken}/> 
+              <Card title='Lime Chicken Burritos' rating={4.8} time={30} calories={300} servings={8} imgsrc={lime_chicken_burritos}/> 
+              <Card title='Lime Chicken Burritos' rating={4.9} time={45} calories={450} servings={6} imgsrc={butter_chicken}/> 
+            </div>
           </div>
 
           <div className= "continer">
