@@ -325,5 +325,12 @@ code {
 }
 
 #examples {
-  padding: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 5%;
+}
+
+.card_example {
+  padding: 10%;
+  max-width: 2px;
 }
