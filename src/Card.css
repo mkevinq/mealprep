@@ -6,6 +6,11 @@
     background-color: #FFFFFF;
 }
 
+.card-examples {
+    font-family: "Red Hat Display";
+    width: 31.5%;
+}
+
 .descriptor {
     display: flex;
     flex-direction: row;

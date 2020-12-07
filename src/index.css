@@ -320,11 +320,6 @@ code {
   margin: 190px 0px; 
 }
 
-.card {
-  font-family: "Red Hat Display";
-  width: 20%;
-}
-
 .card-icon {
   margin: 10px 0px;
 }
@@ -366,4 +361,5 @@ code {
 .card_example {
   padding: 10%;
   max-width: 2px;
+  margin: 0%;
 }
