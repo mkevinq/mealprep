@@ -6,6 +6,11 @@
     background-color: #FFFFFF;
 }
 
+.card-examples {
+    font-family: "Red Hat Display";
+    width: 31.5%;
+}
+
 .descriptor {
     display: flex;
     flex-direction: row;
@@ -45,8 +50,8 @@
 }
 
 #recipe_image {
-    width: 375px;
-    height: 172px;
+    max-width: 100%;
+    object-fit: cover;
 }
 
 #title-info {

@@ -7,7 +7,7 @@ import person from "./assets/order-page/lightning_bolt.svg";
 
 function Card(props) {
     return (
-        <div className='card'>
+        <div className={props.cardType}>
             <img id='recipe_image' src={props.imgsrc}></img>
             <div id='title-info'>
                 <h5 id='recipe_title'>{props.title}</h5>
