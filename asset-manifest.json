@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3cc5f72a.chunk.css",
+    "main.js": "/static/js/main.6ec605de.chunk.js",
+    "main.js.map": "/static/js/main.6ec605de.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.b30d4df8.js",
+    "runtime-main.js.map": "/static/js/runtime-main.b30d4df8.js.map",
+    "static/css/2.136a4374.chunk.css": "/static/css/2.136a4374.chunk.css",
+    "static/js/2.09ee9d5a.chunk.js": "/static/js/2.09ee9d5a.chunk.js",
+    "static/js/2.09ee9d5a.chunk.js.map": "/static/js/2.09ee9d5a.chunk.js.map",
+    "static/js/3.9490fec5.chunk.js": "/static/js/3.9490fec5.chunk.js",
+    "static/js/3.9490fec5.chunk.js.map": "/static/js/3.9490fec5.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.136a4374.chunk.css.map": "/static/css/2.136a4374.chunk.css.map",
+    "static/css/main.3cc5f72a.chunk.css.map": "/static/css/main.3cc5f72a.chunk.css.map",
+    "static/js/2.09ee9d5a.chunk.js.LICENSE.txt": "/static/js/2.09ee9d5a.chunk.js.LICENSE.txt",
+    "static/media/account.fd0bb548.svg": "/static/media/account.fd0bb548.svg",
+    "static/media/butter-chicken.8727ca44.png": "/static/media/butter-chicken.8727ca44.png",
+    "static/media/cart.3919d1c7.svg": "/static/media/cart.3919d1c7.svg",
+    "static/media/delivery-icon.1d283b63.svg": "/static/media/delivery-icon.1d283b63.svg",
+    "static/media/dish-1.f9e5eb68.png": "/static/media/dish-1.f9e5eb68.png",
+    "static/media/dish-2.3586f6ed.png": "/static/media/dish-2.3586f6ed.png",
+    "static/media/full-logo.3c38dd34.svg": "/static/media/full-logo.3c38dd34.svg",
+    "static/media/iphone-preview1.9c39fe2a.png": "/static/media/iphone-preview1.9c39fe2a.png",
+    "static/media/iphones-preview-2.f628a2ae.png": "/static/media/iphones-preview-2.f628a2ae.png",
+    "static/media/lightning_bolt.e5506b9e.svg": "/static/media/lightning_bolt.e5506b9e.svg",
+    "static/media/lime-chicken-burrito.8a70c361.png": "/static/media/lime-chicken-burrito.8a70c361.png",
+    "static/media/magnify-icon.eec28054.svg": "/static/media/magnify-icon.eec28054.svg",
+    "static/media/index.css": "/static/media/pexels-ella-olsson-1640777 2.e15e20f4.png",
+    "static/media/plan-icon.f77b0120.svg": "/static/media/plan-icon.f77b0120.svg",
+    "static/media/small-dish.12507453.png": "/static/media/small-dish.12507453.png",
+    "static/media/star.9730120e.svg": "/static/media/star.9730120e.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b30d4df8.js",
+    "static/css/2.136a4374.chunk.css",
+    "static/js/2.09ee9d5a.chunk.js",
+    "static/css/main.3cc5f72a.chunk.css",
+    "static/js/main.6ec605de.chunk.js"
+  ]
+}
