@@ -24,7 +24,7 @@ import "pure-react-carousel/dist/react-carousel.es.css";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/mealprep">
       <Switch>
         { /* Plan page */}
         <Route path="/plan">
