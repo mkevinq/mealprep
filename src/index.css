@@ -324,6 +324,11 @@ code {
   margin: 10px 0px;
 }
 
+.card {
+  font-family: "Red Hat Display";
+  width: 20%;
+}
+
 .card-header-1 {
   font-family: 'Red Hat Display';
   font-style: normal;
