@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/mealprep/static/css/main.4f3f1269.chunk.css",
-    "main.js": "/mealprep/static/js/main.6ec605de.chunk.js",
-    "main.js.map": "/mealprep/static/js/main.6ec605de.chunk.js.map",
+    "main.js": "/mealprep/static/js/main.80fdc50e.chunk.js",
+    "main.js.map": "/mealprep/static/js/main.80fdc50e.chunk.js.map",
     "runtime-main.js": "/mealprep/static/js/runtime-main.890f2965.js",
     "runtime-main.js.map": "/mealprep/static/js/runtime-main.890f2965.js.map",
     "static/css/2.136a4374.chunk.css": "/mealprep/static/css/2.136a4374.chunk.css",
@@ -36,6 +36,6 @@
     "static/css/2.136a4374.chunk.css",
     "static/js/2.09ee9d5a.chunk.js",
     "static/css/main.4f3f1269.chunk.css",
-    "static/js/main.6ec605de.chunk.js"
+    "static/js/main.80fdc50e.chunk.js"
   ]
 }
