@@ -1,5 +1,5 @@
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
   Link
@@ -24,7 +24,7 @@ import "pure-react-carousel/dist/react-carousel.es.css";
 
 function App() {
   return (
-    <Router basename="/mealprep">
+    <Router basename="/">
       <Switch>
         { /* Plan page */}
         <Route path="/plan">
